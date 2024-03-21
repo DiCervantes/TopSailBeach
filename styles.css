@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+/* CSS RESET */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*fonts*/
+.rhodium-libre-regular {
+    font-family: "Rhodium Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+h1, h3, p {
+    color: black;
+}
+body {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+}
+.gallerypics {
+    width: 400px;
+    height: 400px;
+}
+footer {
+text-align: center;
+}
+/*social media links */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #219ad2;
+    color: black;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: black;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+/*home page layout*/
+.container {  
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4";
+  }
+  
+ .container .item2 {
+     grid-area: item2; 
+    text-align: center;
+    padding-top: 100px;
+}
+
+.container .item4 { 
+    grid-area: item4; 
+    text-align: center;
+    padding-top: 100px;
+}
+  
+  .sunbeach {
+max-width: 90%;
+  }
+.boat {
+    max-width: 95%;
+}
+.about {
+    padding-left: 200px;
+    padding-top: 50px;
+    text-align: center;
+}
+.container .item2 {
+    padding-top: 100px;
+}
+
+/*Gallery page layout*/
+.galleryGrid {  
+    display: grid;
+    width: 100%;
+    padding-left: 10%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "item1 item1 item1 item1"
+      "item2 item3 item3 item4"
+      "item5 item6 item6 item7";
+  }
+  
+.galleryGrid .item1 {
+    grid-area: item1;
+    text-align: center;
+ }
+
+ /*EVENTS PAGE LAYOUT*/
+ .events {  
+    width: 100%;
+    float: right;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "item9 item1 item2"
+      "item9 item3 item4"
+      "item9 item5 item6"
+      "item9 item7 item8";
+  }
+  .events h1 {
+    padding-bottom: 10%;
+  }
+
+  /*FAQ LAYOUT*/
+  .faqs { 
+    padding-top: 20px;
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4";
+  }
+  .hand {
+    padding-left: 40%;
+    width:600px;
+    height: 600px;
+  }
+  
+
+
+ 
+
